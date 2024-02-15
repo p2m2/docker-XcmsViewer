@@ -3,8 +3,9 @@ name: Publish XcmsViewer Docker Image
 
 
 on:
-  release:
-    types: [edited]
+  push:
+    branches:
+      - main
 
 jobs:
   push_to_registry:
